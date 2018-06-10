@@ -1,15 +1,33 @@
 ---
 title: Le Wagon - Middleman
 ---
+<div class="home">
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div id="home1" style="background-image: url(<%= image_path 'shiatsu1.jpg'%>)">
+    <div class="home-content">
+      <h1>
+        Middleman is now running!
+      </h1>
+      <p>
+        <%= link_to "LE SHIATSU C'EST COOL", "about.html" %>
+      </p>
+    </div>
+
+    <div class="box" style="background-image: url(<%= image_path 'logo-blanc.jpg'%>)"></div>
+
   </div>
+
+  <div id="home2" style="background-image: url(<%= image_path 'shiatsu2.jpg'%>)">
+    <div class="home-content">
+      <h1>
+        Middleman is now running!
+      </h1>
+      <p>
+        <%= link_to "LE SHIATSU C'EST COOL", "about.html" %>
+      </p>
+    </div>
+  </div>
+
 </div>
+
+
