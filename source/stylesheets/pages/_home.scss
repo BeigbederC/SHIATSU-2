@@ -1,49 +1,187 @@
+// .home {
+//   height: 100vh;
+//   width: 100%;
+//   color: white;
+//   display: flex;
+//   p {
+//     margin-top: 1.5em;
+//   }
+//   a {
+//     color: white;
+//     font-weight: bold;
+//     font-size: 16px;
+//     letter-spacing: 8px;
+//   }
+// }
+
+// #home1 {
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   justify-content: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   float:left;
+//   width: 50%;
+//   height: 100vh;
+//   position: relative;
+// }
+
+// #home2 {
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   justify-content: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   float: right;
+//   height: 100vh;
+//   width: 50%;
+// }
+
+// // .box {
+// //   float: right;
+// // }
+
+// .box {
+//   position: absolute;
+//   background-color: black;
+//   top: 10px;
+//   right: 10px;
+//   z-index: 1;
+// }
 .home {
   height: 100vh;
-  width: 100%;
-  color: white;
-  display: flex;
+  background-color: white;
+}
+
+.head {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 3px;
   p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 8px;
+    font-size: 14px;
   }
 }
 
-#home1 {
+.card {
+  margin-top: 13vh;
+  margin-bottom: 13vh;
+  height: calc(70vh - 80px);
+  padding: 70px;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.gauche {
+  p {
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    margin: 10px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.droite {
+  p {
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    margin: 10px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+// .foot-gauche {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   margin-right: -50px;
+// }
+.socialLinks{
+  width:75vh;
   float:left;
-  width: 50%;
-  height: 100vh;
-  position: relative;
-}
-
-#home2 {
+  position:relative;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  a{
+    float:left;
+    width:20%;
+    text-align:center;
+    color:#1a1a1a;
+    font-size:15pt;
+    transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    position:relative;
+
+
+    span{
+      opacity:0;
+      pointer-events:none;
+      background:#1183a7;
+      padding:5px;
+      text-align:center;
+      float:left;
+      width:80px;
+      position:absolute;
+      left:50%;
+      margin-left:-40px;
+      border-radius:15px;
+      font-size:9pt;
+      bottom:-10px;
+      color:#fff;
+      font-weight:100;
+      transition:all .2s ease;
+      -webkit-transition:all .2s ease;
+      transform:translateY(30px);
+
+
+    }
+    &:hover{
+      color:#EF637A;
+
+      span{
+        opacity:1;
+        transform:translateY(15px);
+      }
+    }
+  }
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   background-repeat: no-repeat;
-  background-size: cover;
-  float: right;
-  height: 100vh;
-  width: 50%;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+  }
 }
-
-.box {
-  position: absolute;
-  background-color: black;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-}
-
